@@ -22,7 +22,11 @@ elif DATABASE_URL.startswith("mysql"):
 engine = create_engine(
     DATABASE_URL,
     pool_pre_ping=True,
-    connect_args=connect_args
+    connect_args={
+        "ssl": {
+            "ssl": True
+        }
+    }
 )
 
 
