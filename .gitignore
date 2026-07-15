@@ -1,3 +1,7 @@
+# Root environment files
+.env
+.env.example
+
 # Backend
 backend/venv/
 backend/__pycache__/
