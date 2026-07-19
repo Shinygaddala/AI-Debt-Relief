@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Default FastAPI backend URL
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://ai-debt-relief-2.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
